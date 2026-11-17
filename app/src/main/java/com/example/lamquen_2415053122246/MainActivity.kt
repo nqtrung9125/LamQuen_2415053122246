@@ -1,5 +1,4 @@
-package com.example.lamquen
-
+package com.example.lamquen_2415053122246
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -45,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         if (ten.length !in 2..40) {
             edtTen.error = "Tên phải dài 2–40 ký tự"
             return
-        }      val chuoiSo = edtSoLuong.text.toString().trim()
+        }
+        val chuoiSo = edtSoLuong.text.toString().trim()
         val soLuong = if (chuoiSo.isNotEmpty() && chuoiSo.all { it in '0'..'9' })
             chuoiSo.toIntOrNull() else null
         if (soLuong == null || soLuong !in 1..9) {
